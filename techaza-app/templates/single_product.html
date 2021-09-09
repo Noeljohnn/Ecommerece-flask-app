@@ -1,0 +1,86 @@
+{% extends 'layout.html' %} {% block content %} {% block title %}Product{% endblock %}
+
+<!-- single product page -->
+{% for item in products %}
+<div class="container">
+    <div class="small-container m-5 p-5 row">
+        <div class="row">
+            <div class="col-1">
+                <img src="static/Assets/images/single-product-page/product1.jpg" width="400px">
+
+
+            </div>
+            <div class="col-6">
+                <p>{{ item.concept }}</p>
+                <h2>{{ item.product_name }}</h2>
+                <h4>₹{{ item.product_price }}</h4><br>
+                <input type="number" value="1">
+                <a href="" class="btn btn-secondary">Add to cart</a> <a href="" class="btn btn-success">Buy now</a>
+                <br><br>
+                <h3>product Details</h3><br>
+                <p>{{ item.product_details }}</p>
+            </div>
+        </div>
+    </div>
+    <h2 class="m-5">Description</h2>
+    <div class="card shadow">
+        <h4 class="card-header">{{ item.product_description_title }}
+        </h4>
+        <div class="card-body">
+            <h4 class="card-title">Easy Set Up</h4>
+            <p class="card-text">{{ item.product_descriptin_easysetup }}
+                <h4>Features</h4>
+                <p>{{ item.product_descriptin_features }}</p>
+                <h4>Adjustable and Dimmable</h4>
+                <p>{{ item.product_descriptin_adjustable }}</p>
+
+        </div>
+    </div>
+
+    <!-- related products -->
+    <div class="row row-2 m-5">
+        <h2>Related Products</h2>
+        <!-- <p class="view-more">View more</p> -->
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4 mt-5 mb-5">
+        <div class="col " data-aos="fade-up">
+            <div class="card card-4 h-100 text-center shadow p-5 mb-0 bg-white rounded ">
+                <a href="single-product-page.html">
+                    <div class="inner h-100"> <img src="static/Assets/images/concepts/light.jpg " class="card-img-top h-100 " alt="... "></div>
+                    <div class="card-body ">
+                        <h5 class="card-title ">Lighting</h5>
+                </a>
+                </div>
+            </div>
+        </div>
+        <div class="col " data-aos="fade-up">
+            <div class="card card-4 h-100 text-center shadow p-5 mb-0 bg-white rounded ">
+
+                <div class="inner h-100"><img src="static/Assets/images/concepts/interactive-home.jpg " class="card-img-top h-100 " alt="... "></div>
+                <div class="card-body ">
+                    <h5 class="card-title ">Interactive-Home</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col " data-aos="fade-up">
+            <div class="card card-4 h-100 text-center shadow p-5 mb-0 bg-white rounded ">
+
+                <div class="inner h-100"> <img src="static/Assets/images/concepts/climate.jpg " class="card-img-top h-100 " alt="... "></div>
+                <div class="card-body ">
+                    <h5 class="card-title ">Climate</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col " data-aos="fade-up">
+            <div class="card card-4 h-100 text-center shadow p-5 mb-0 bg-white rounded ">
+
+                <div class="innerh h-100"><img src="static/Assets/images/concepts/protection.jpg " class="card-img-top h-100 " alt="... "></div>
+                <div class="card-body ">
+                    <h5 class="card-title ">Protection</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %} {% endblock %}

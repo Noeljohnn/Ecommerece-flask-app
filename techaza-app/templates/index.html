@@ -1,0 +1,252 @@
+{% extends 'layout.html' %} {% block content %} {% block title %}Home{% endblock %}
+
+<!-- carousel -->
+<div id="myCarousel" class="carousel slide bg-inverse w-100 ms-auto me-auto carousel-fade pt-5 " data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+        <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+            <img class="d-block w-100 opacity" src="static/Assets/images/carousel/caro1.jpg" alt="First slide">
+            <div class="carousel-caption">
+                <h1 style="font-size: 60px;">Hello smart home.</h1>
+                <p style="margin-bottom: 210px;">
+                    Control Your Home From Your Smartphone</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="static/Assets/images/carousel/caro2.jpg" alt="Second slide">
+            <div class="carousel-caption">
+                <h1>Smart lighting</h1>
+                <p>Create Your Own Ambience.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="static/Assets/images/carousel/caro4.jpg" alt="Third slide">
+            <div class="carousel-caption">
+                <h1>Interactive Smart Home Control</h1>
+                <p>ust pair your smartphone to the Amazon Echo over the Bluetooth and play music on-the-go over the Echo..</p>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"></span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"></span>
+    </a>
+</div>
+
+
+<!-- intro part to smart home  -->
+<div class="container">
+    <h2 class="m-5 intro" style="text-align: center;">Turn On Your Moments. Turn On Your Imagination.</h2>
+    <div class="card mb-3 m-5" data-aos="fade-right" style="max-width: 2440px; max-height:max-content;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="static/Assets/images/intro/intro1.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Control From Your Smartphone</b></h5>
+                    <p class="card-text">Smart lighting offers endless possibilities to control your lights from your smartphone or a tablet. Select the range of warm cool white lights and change its intensity that suits your need. Add splashes of different lights and colors
+                        and transform your every occasion into a unique memory.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2 class="m-5 intro" style="text-align: center;">Multiple Devices, One Control</h2>
+    <div class="card bg-dark text-white m-5" data-aos="zoom-in-up">
+        <img src="static/Assets/images/intro/intro5.jpg" class="card-img opacity-0" alt="...">
+        <div class="card-img-overlay">
+            <h3 class="card-title">Immersive Smart Home Audio Experience</h3>
+            <p class="card-text">Stream your favourite playlists and tracks directly from your smartphone to all the wireless Hi-Fi Sound Speakers and create the best audio experiences for yourself. Integrate speakers to play the same music across every room of your home
+                or play different tracks for different speakers. Easy to use app helps in faster pairing, smooth streaming and easy control..</p>
+
+        </div>
+    </div>
+
+    <h2 class="m-5 intro" style="text-align: center;">A Home With a Security Alarm System Has …</h2>
+    <div class="card mb-3 m-5" data-aos="fade-left" style="max-width: 2440px; max-height:max-content;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="static/Assets/images/intro/intro2.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Sensors for every application</b></h5>
+                    <p class="card-text">A wholistic approach to home security is very essential. In addition to having sensors that can detect and report any intrusion or unwanted motion, sensor that can report any accidental events like smoke leakage, gas leakage are equally
+                        important to ensure overall home safety. <br>Also the control over the multiple sensors at a time should be quick and less cumbersome. A remote keyfob or a smartphone application can let you have instant access and better control
+                        over your home security.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- concepts section -->
+    <h2 class="mt-5"> Concepts</h2>
+    <!-- First row -->
+    <div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
+        <div class="col " data-aos="fade-up">
+            <div class="card card-4 h-100 text-center shadow p-5 mb-0 bg-white rounded ">
+                <a href="{{url_for('single_product')}}">
+                    <div class="inner h-100"> <img src="static/Assets/images/concepts/light.jpg " class="card-img-top h-100 " alt="... "></div>
+                    <div class="card-body ">
+                        <h5 class="card-title ">Lighting</h5>
+                </a>
+                </div>
+            </div>
+        </div>
+        <div class="col " data-aos="fade-up">
+            <div class="card card-4 h-100 text-center shadow p-5 mb-0 bg-white rounded ">
+
+                <div class="inner h-100"><img src="static/Assets/images/concepts/interactive-home.jpg " class="card-img-top h-100 " alt="... "></div>
+                <div class="card-body ">
+                    <h5 class="card-title ">Interactive-Home</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col " data-aos="fade-up">
+            <div class="card card-4 h-100 text-center shadow p-5 mb-0 bg-white rounded ">
+
+                <div class="inner h-100"> <img src="static/Assets/images/concepts/climate.jpg " class="card-img-top h-100 " alt="... "></div>
+                <div class="card-body ">
+                    <h5 class="card-title ">Climate</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col " data-aos="fade-up">
+            <div class="card card-4 h-100 text-center shadow p-5 mb-0 bg-white rounded ">
+
+                <div class="innerh h-100"><img src="static/Assets/images/concepts/protection.jpg " class="card-img-top h-100 " alt="... "></div>
+                <div class="card-body ">
+                    <h5 class="card-title ">Protection</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Second row -->
+    <div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
+        <div class="col " data-aos="fade-up">
+            <div class="card card-4 h-100 text-center shadow p-5 mb-0 bg-white rounded ">
+                <div class="inner h-100"> <img src="static/Assets/images/concepts/surveillance (2).jpg " class="card-img-top h-100 " alt="... "></div>
+                <div class="card-body ">
+                    <h5 class="card-title ">Surveillance</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col " data-aos="fade-up">
+            <div class="card card-4 h-100 text-center shadow p-5 mb-0 bg-white rounded ">
+                <div class="inner h-100"> <img src="static/Assets/images/concepts/home-security.jpg " class="card-img-top h-100 " alt="... "></div>
+                <div class="card-body ">
+                    <h5 class="card-title ">Home-security</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col " data-aos="fade-up">
+            <div class="card card-4 h-100 text-center shadow p-5 mb-0 bg-white rounded ">
+                <div class="inner h-100"> <img src="static/Assets/images/concepts/multimedia.jpg " class="card-img-top h-100 " alt="... "></div>
+                <div class="card-body ">
+                    <h5 class="card-title ">Multimedia</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col " data-aos="fade-up">
+            <div class="card card-4 h-100 text-center shadow p-5 mb-0 bg-white rounded ">
+                <div class="inner h-100"> <img src="static/Assets/images/concepts/energy.jpg " class="card-img-top h-100 " alt="... "></div>
+                <div class="card-body ">
+                    <h5 class="card-title ">Energy-efficiency</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- New Arrivals -->
+    <h2 class="mt-5 ">New Arrival's</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4 mt-5" data-aos="fade-up">
+        <div class="col ">
+            <div class="card card-4 h-100 text-center shadow p-5 mb-0 bg-white rounded ">
+                <img src="static/Assets/images/concepts/surveillance (2).jpg " class="card-img-top h-100 " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Surveillance</h5>
+                    <h5 class="card-title ">₹6,500.00</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col ">
+            <div class="card card-4 h-100 text-center shadow p-5 mb-0 bg-white rounded ">
+                <img src="static/Assets/images/concepts/home-security.jpg " class="card-img-top h-100 " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Home-security</h5>
+                    <h5 class="card-title ">₹4,500.00</h5>
+
+                </div>
+            </div>
+        </div>
+        <div class="col ">
+            <div class="card card-4 h-100 text-center shadow p-5 mb-0 bg-white rounded ">
+                <img src="static/Assets/images/concepts/multimedia.jpg " class="card-img-top h-100 " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Multimedia</h5>
+                    <h5 class="card-title ">₹2,500.00</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col ">
+            <div class="card card-4 h-100 text-center shadow p-5 mb-0 bg-white rounded ">
+                <img src="static/Assets/images/concepts/energy.jpg " class="card-img-top h-100 " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Energy-efficiency</h5>
+                    <h5 class="card-title ">₹5,500.00</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Top picks -->
+    <h2 class="mt-5 ">Top Pick's</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4 mt-5 mb-5" data-aos="fade-up">
+        <div class="col ">
+            <div class="card card-4 h-100 text-center shadow p-5 mb-0 bg-white rounded ">
+                <img src="static/Assets/images/concepts/surveillance (2).jpg " class="card-img-top h-100 " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Surveillance</h5>
+                    <h5 class="card-title ">₹6,500.00</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col ">
+            <div class="card card-4 h-100 text-center shadow p-5 mb-0 bg-white rounded ">
+                <img src="static/Assets/images/concepts/home-security.jpg " class="card-img-top h-100 " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Home-security</h5>
+                    <h5 class="card-title ">₹4,500.00</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col ">
+            <div class="card card-4 h-100 text-center shadow p-5 mb-0 bg-white rounded ">
+                <img src="static/Assets/images/concepts/multimedia.jpg " class="card-img-top h-100 " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Multimedia</h5>
+                    <h5 class="card-title ">₹1,500.00</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col ">
+            <div class="card card-4 h-100 text-center shadow p-5 mb-0 bg-white rounded ">
+                <img src="static/Assets/images/concepts/energy.jpg " class="card-img-top h-100 " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Energy-efficiency</h5>
+                    <h5 class="card-title ">₹6,500.00</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

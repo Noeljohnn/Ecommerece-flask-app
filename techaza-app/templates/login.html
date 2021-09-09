@@ -1,0 +1,30 @@
+{% extends 'layout.html' %} {% block content %} {% block title %}Login{% endblock %}
+<!-- Login form -->
+
+<div class="center p-5 mt-5 shadow">
+    <h4 class="text-center">Login to continue</h4>
+    <form method="post">
+        {{ form.hidden_tag() }}
+        <div class="txt_field">
+            <input type="email" name="email" required>
+            <span></span>
+            <label>Email</label>
+        </div>
+        <div class="txt_field">
+            <input type="password" name="password" required>
+            <span></span>
+            <label>Password</label>
+        </div>
+        <div class="pass">Forgot Password?</div>
+        <input type="submit" value="Login">
+        <div class="signup_link">
+            Not a member? <a href="{{url_for('signup')}}">Signup</a>
+        </div>
+    </form>
+</div>
+<div class="loginimg img-lg">
+    <img src="static/Assets/images/login/login.svg" height="650px" width="650px"></div>
+
+
+
+{% endblock %}

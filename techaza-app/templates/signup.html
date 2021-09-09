@@ -1,0 +1,29 @@
+{% extends 'layout.html' %} {% block content %} {% block title %}Sign-up{% endblock %}
+<!-- signup form -->
+
+<div class="center p-5 mt-5 shadow">
+    <h4 class="text-center">Join for free</h4>
+    <form method="post">
+        {{ form.hidden_tag() }}
+        <div class="txt_field">
+            <input type="email" name="email" required>
+            <span></span>
+            <label>Email</label>
+        </div>
+        <div class="txt_field">
+            <input type="password" name="password" required>
+            <span></span>
+            <label>Password</label>
+        </div>
+        <input type="submit" value="Signup">
+        <div class="signup_link">
+            By signing up you agree to Terms of Service & Privacy Policy.
+            <!-- <a href="#">Signup</a> -->
+        </div>
+    </form>
+</div>
+<div class="signup-img">
+    <img src="static/Assets/images/signup/signup.svg" height="550px" width="550px"></div>
+
+
+{% endblock %}
